@@ -1,10 +1,32 @@
-# Exercise 16 - Find the Oldest
+# Exercício 16 - Encontrar a Pessoa Mais Velha 👵🧓
 
-Given an array of objects representing people with a birth and death year, return the oldest person.
+Recebes um array de objetos que representam pessoas com ano de nascimento e, opcionalmente, ano de morte.  
+O teu objetivo é **encontrar a pessoa mais velha** com base na idade que viveu.
 
-Now that you've reached the final exercise, you should be fairly comfortable getting the information you need from test case(s). Take a look at how the array of objects is constructed in this exercise's test cases to help you write your function.
+---
 
-## Hints
-- You should return the whole person object, but the tests mostly just check to make sure the name is correct.
-- There are many ways of doing this using built-in array methods like `reduce`, or even chaining multiple! 
-- One of the tests checks for people with no death-date.. use JavaScript's Date function to get their age as of today.
+## 🧪 O que deves devolver
+
+- A função deve **devolver o objeto completo** da pessoa mais velha.
+- Os testes verificam principalmente se o nome da pessoa está correto.
+
+---
+
+## 💡 Dicas
+
+- Podes usar `.reduce()` para comparar idades e manter a pessoa mais velha encontrada até ao momento.
+- Algumas pessoas não têm `yearOfDeath` — nesses casos, assume que ainda estão vivas e calcula a idade até ao ano atual:
+  ```javascript
+  const currentYear = new Date().getFullYear();
+  ```
+
+- A idade pode ser calculada assim:
+  ```javascript
+  const age = (person.yearOfDeath || currentYear) - person.yearOfBirth;
+  ```
+
+---
+
+Este é o último exercício! 🏁  
+Aplica tudo o que aprendeste sobre **arrays**, **objetos**, **funções**, **condições** e **métodos como `.reduce()`**.  
+Boa sorte — e parabéns por chegares até aqui! 🚀🎉

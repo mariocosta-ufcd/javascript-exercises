@@ -1,26 +1,33 @@
-# Exercise 15 - Get the Titles!
+# Exercício 15 - Obter os Títulos! 📚
 
-You are given an array of objects that represent books with an author and a title that looks like this:
+Recebes um array de objetos que representam livros, com `title` e `author`.  
+A tua tarefa é criar uma função que devolve **apenas os títulos dos livros**.
+
+---
+
+## 🧪 Exemplo
 
 ```javascript
 const books = [
-  {
-    title: 'Book',
-    author: 'Name'
-  },
-  {
-    title: 'Book2',
-    author: 'Name2'
-  }
-]
+  { title: 'Book', author: 'Name' },
+  { title: 'Book2', author: 'Name2' }
+];
+
+getTheTitles(books); // devolve ['Book', 'Book2']
 ```
 
-Your job is to write a function that takes the array and returns an array of titles:
+---
 
+## 💡 Dicas
+
+- Usa um **método embutido do JavaScript** para facilitar o trabalho.
+- O método `.map()` é ideal para **transformar arrays** — neste caso, para extrair os títulos de cada objeto.
+
+Exemplo de estrutura:
 ```javascript
-getTheTitles(books) // ['Book','Book2']
+return books.map(book => book.title);
 ```
 
-## Hints
+---
 
-- You should use a built-in javascript method to do most of the work for you!
+Este exercício ajuda-te a praticar a manipulação de arrays de objetos — algo muito comum no desenvolvimento web moderno. Boa sorte! 🚀

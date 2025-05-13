@@ -1,12 +1,44 @@
-# Exercise 14 - Fibonacci
+# Exercício 14 - Sequência de Fibonacci 🌀
 
-Create a function that returns a specific member of the Fibonacci sequence:
+Cria uma função que devolve o **n-ésimo número da sequência de Fibonacci**.
 
-> A series of numbers in which each number ( Fibonacci number ) is the sum of the two preceding numbers.
-> In this exercise, the Fibonacci sequence used is 1, 1, 2, 3, 5, 8, etc.
-> To learn more about Fibonacci sequences, go to: https://en.wikipedia.org/wiki/Fibonacci_sequence
+---
+
+## 📚 O que é a sequência de Fibonacci?
+
+É uma sequência de números onde **cada número é a soma dos dois anteriores**.
+
+Exemplo:
+```
+1, 1, 2, 3, 5, 8, 13, ...
+```
+
+---
+
+## 🧪 Exemplos
 
 ```javascript
-fibonacci(4); // returns the 4th member of the series: 3  (1, 1, 2, 3)
-fibonacci(6); // returns 8
+fibonacci(4); // devolve 3  → sequência: 1, 1, 2, 3
+fibonacci(6); // devolve 8  → sequência: 1, 1, 2, 3, 5, 8
 ```
+
+---
+
+## 💡 Dicas
+
+- Usa uma abordagem com `for` para calcular a sequência até chegares ao valor pedido.
+- Podes começar com:
+  ```javascript
+  let a = 1;
+  let b = 1;
+  ```
+  E iterar até chegares ao número desejado.
+
+- Lembra-te: o primeiro número da sequência (posição 1) é 1.
+
+ℹ️ Mais sobre Fibonacci:
+[Wikipedia – Fibonacci](https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci)
+
+---
+
+Boa sorte! Este é um ótimo exercício para treinar **ciclos**, **variáveis temporárias** e **pensamento algorítmico** 🧠

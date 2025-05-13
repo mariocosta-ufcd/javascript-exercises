@@ -1,19 +1,46 @@
-# Exercise 06 - repeatString
+# Exercício 06 - Repetir String 🔁
 
-Write a function that simply repeats the string a given number of times:
+Escreve uma função que repete uma string um determinado número de vezes.  
+Exemplo:
 
 ```javascript
-repeatString('hey', 3) // returns 'heyheyhey'
+repeatString('hey', 3) // devolve 'heyheyhey'
 ```
 
-This function will take two arguments, `string` and `num`.
+---
 
-Use loops to implement `repeatString` rather than using the builtin `String.prototype.repeat` which has the same behaviour.
+## ✅ O que a função deve fazer
 
-*Note:* The exercises after this one will not have arguments provided as this one does - you will need to provide them yourself from now on. So read each exercise's README carefully to see what kinds of arguments will be expected.
+A função `repeatString` deve receber **dois argumentos**:
+- `string`: o texto a repetir
+- `num`: o número de vezes que deve ser repetido
 
-## Hints
+Deves usar **um ciclo (loop)** para implementar a função — **não podes usar `String.prototype.repeat()`**, mesmo que tenha o mesmo comportamento.
 
-- Take note of the above function call- how exactly is it being called?
+---
 
-- Create a variable to hold the string you're going to return, create a loop that repeats the given number of times and add the given string to the result on each loop.
+## 💡 Dicas
+
+- Cria uma variável que começa com uma string vazia (por exemplo `let resultado = ''`)
+- Usa um ciclo `for` ou `while` para repetir o número de vezes indicado por `num`
+- Em cada volta do ciclo, junta a string ao resultado (`resultado += string`)
+
+---
+
+## 🧪 Exemplo de teste
+
+```javascript
+repeatString('hey', 3) // deve devolver 'heyheyhey'
+```
+
+---
+
+## ⚠️ Nota importante
+
+A partir deste exercício, os argumentos **já não serão fornecidos automaticamente** como neste exemplo.
+
+Lê com atenção o `README.md` de cada exercício para perceber **que argumentos** deves passar à função durante os testes.
+
+---
+
+Bom trabalho! Continua a praticar — estás quase a dominar ciclos e funções! 🚀

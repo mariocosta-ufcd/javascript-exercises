@@ -1,17 +1,40 @@
-# Exercise 10 - leapYears
+# Exercício 10 - Anos Bissextos 📅
 
-Create a function that determines whether or not a given year is a leap year. Leap years are determined by the following rules:
+Cria uma função chamada `leapYears` que determina se um determinado ano é **bissexto** ou não.
 
-> Leap years are years divisible by four (like 1984 and 2004). However, years divisible by 100 are not leap years (such as 1800 and 1900) unless they are divisible by 400 (like 1600 and 2000, which were in fact leap years). (Yes, it's all pretty confusing)
->
-> -- <cite>[Learn to Program](https://pine.fm/LearnToProgram/chap_06.html) by Chris Pine</cite>
+## 📖 Regras:
+
+- Anos divisíveis por **4** são bissextos  
+  ✅ Ex: 1984, 2004
+
+- MAS anos divisíveis por **100** **não** são bissextos  
+  ❌ Ex: 1800, 1900
+
+- EXCEPTO se também forem divisíveis por **400**  
+  ✅ Ex: 1600, 2000
+
+---
+
+## 🧪 Exemplos
 
 ```javascript
-leapYears(2000) // is a leap year: returns true
-leapYears(1985) // is not a leap year: returns false
+leapYears(2000) // true - é bissexto
+leapYears(1985) // false - não é bissexto
 ```
-Still confused? Refer to <cite>[this breakdown](https://time-and-calendar.com/leap-years/#:~:text=How%20to%20Know%20if%20Certain%20Year%20is%20a%20Leap%20Year)<cite> with examples.
 
+Se ainda estiveres confuso, consulta este resumo:  
+[time-and-calendar.com - Leap Years](https://time-and-calendar.com/leap-years/#:~:text=How%20to%20Know%20if%20Certain%20Year%20is%20a%20Leap%20Year)
 
-## Hints
-- use an `if` statement and `&&` to make sure all the conditions are met properly
+---
+
+## 💡 Dicas
+
+- Usa um `if` com operadores lógicos como `&&` e `||`
+- Lembra-te de testar as condições pela ordem correta:
+  1. Divisível por 400 → ✅ é bissexto
+  2. Divisível por 100 → ❌ não é bissexto
+  3. Divisível por 4 → ✅ é bissexto
+
+---
+
+Boa sorte! Este é um ótimo exercício para praticar **condições múltiplas e lógica booleana**! 🧠
