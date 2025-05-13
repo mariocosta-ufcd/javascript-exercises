@@ -1,9 +1,17 @@
-# Exercise 02 - addNumbers
+# Exercício 02 - Somar Números ➕
 
-Troubleshoot and modify the existing function so that it returns the digit 2. Avoid "hard coding" the result and try to use variables `a` and `b` to get the correct output.
+Neste exercício vais corrigir uma função chamada addNumbers que está com um erro. O objetivo é que a função devolva o número 2, usando variáveis (e não colocando o resultado diretamente).
 
-Currently, it is not returning the correct value.
+### 🧩 O problema
+Neste momento, a função não está a devolver o valor correto. Vais precisar de modificar a linha 7 para que o cálculo funcione.
 
-## Hints
+### 💡 Dicas
+- Não coloques o número 2 diretamente.
+- Usa as variáveis a e b para somar.
 
-- You only need to edit the strings on line 7.
+### 🧪 Como testar
+No terminal, dentro da pasta do exercício, corre:
+
+```bash
+npm test addNumbers.spec.js
+```

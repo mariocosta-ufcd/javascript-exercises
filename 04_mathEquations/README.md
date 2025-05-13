@@ -1,23 +1,39 @@
 # Exercise 04 - mathEquations
 
-Replace the strings to the right of the `=` with the expression they describe. Do **not** manually enter the answers to the equation.
+Neste exercício vais completar algumas expressões matemáticas em JavaScript.
 
-Currently, the variables are strings. They need to be math equations instead.
+O objetivo é escrever as equações, e não colocar diretamente o resultado.
 
-To help you, the first variable has been completed for you:
-```js
-const a = 1 - 1 // Freebie!!! This is the answer to "one minus one"
+### ❌ O erro comum
+Errado:
+```javascript
+const a = 0 // ❌ Isto está errado! Não queremos o resultado direto.
+```
+Certo:
+```javascript
+const a = 1 - 1 // ✅ Isto é correto! Estás a escrever a equação.
 ```
 
-The following is an example of the **wrong** answer:
-```js
-const a = 0 // WRONG!!! You need to write out the equation, NOT put the result of the equation directly!
+### ✅ O que tens de fazer
+Substitui as **strings à direita do sinal `=`** por expressões matemáticas que representam a frase.
+
+⚠️ **Não coloques os números já resolvidos**. O teu código deve conter operações matemáticas (+, -, *, /).
+
+### 💡 Dica
+A primeira linha já está feita por ti como exemplo:
+```javascript
+const a = 1 - 1 // “um menos um”
 ```
+Segue esse modelo para os restantes.
 
-Feel free to run the test suite right now to see the first test pass, then go from there. Good luck!
+### 🧪 Como testar
+Corre o seguinte comando no terminal:
+```javascript
+npm test mathEquations.spec.js
+```
+O primeiro teste já deve passar. Depois, vais vendo os restantes falharem até os corrigires todos!
 
-## Hints
 
-- Look at the docs for arithmetic operators in JavaScript for a quick reference.
-
-- Refer back to the [Variables and Operators lesson](https://www.theodinproject.com/lessons/foundations-variables-and-operators) if you are still stuck.
+### 📚 Recursos úteis
+- Documentação dos operadores aritméticos em JS: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
+- Lição sobre váriaveis e operadores.

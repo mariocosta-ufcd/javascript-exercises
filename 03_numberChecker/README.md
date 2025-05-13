@@ -1,20 +1,36 @@
 # Exercise 03 - numberChecker
 
-Modify the code so it returns `true` when the number is greater than or equal to 10, and `false` if it is less than 10.
+Neste exercício vais corrigir a função numberChecker para que devolva true se o número for maior ou igual a 10, e false caso contrário.
 
-Currently, the code returns `true` if the number is `6`, otherwise, it returns `false`.
+### ❌ Problema atual
 
-You may also notice that in this exercise, there are multiple tests (in the file `numberChecker.spec.js`). Only the first test is currently enabled. So after making sure that the first test passes, enable the next one by deleting the `.skip` portion from the `test.skip()` function. It is usually easier if you enable only one test a time, then edit your code so that it passes. You can keep enabling only one at a time until slowly but surely, they all pass!
+Neste momento, a função está errada:
+Ela devolve true apenas quando o número é 6, e false para os restantes valores.
 
-- If running `npm test numberChecker.spec.js` returns results similar to what is shown below, make sure that you have enabled the rest of the tests, as described in the instructions above.
+### ✅ O que tens de fazer
+- Edita apenas a linha 2 da função.
+- A função deve verificar se o número recebido é maior ou igual a 10 (>= 10).
+- Não cries condições para cada número individual. Usa operadores de comparação.
 
+### 🧪 Como testar
+1. Corre no terminal:
+```bash
+npm numberChecker.spec.js
 ```
+2. No ficheiro numberChecker.spec.js vais ver vários testes.
+3. **Só o primeiro está ativado no início**. Quando esse funcionar:
+  - Apaga .skip da próxima linha: `test.skip(...)`
+  - Muda para: `test(...)`
+4. **Vai ativando um teste de cada vez** e corrige o código até todos passarem!
+
+### 📌 Exemplo do que pode aparecer:
+
+````yaml
 Test Suites: 1 passed, 1 total
 Tests:       3 skipped, 1 passed, 4 total
 ```
+Isso significa que só um teste está ativo. Quando terminares, deves ter 4 testes a passar.
 
-## Hints
-
-- You only need to edit line 2.
-
-- Look at the docs for comparison operators in JavaScript for a quick reference.
+### 💡 Dicas
+- Lembra-te: só precisas de alterar uma linha.
+- Pesquisa por operadores de comparação em JavaScript se tiveres dúvidas: >=, <, ===, etc.
